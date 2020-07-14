@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/aa794a4ac6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section id="title">
+        <div class="container-fluid">
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">GRIP <img class="Logo" src="/images/grip.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">DashBoard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/user">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/transaction">Transactions</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    
+    
+<section id="user">
+    <div class="row row-cols-2 row-cols-md-4">
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="/images/men-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">hello</h5> -->
+              <p class="card-text"><%= userDetails[0].name%><br><%= userDetails[0].credit%></p>
+              <a href="/view1" class="btn btn-info 0">view</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/men-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text"><%= userDetails[1].name%><br><%= userDetails[1].credit%></p>
+              <a href="/view2" class="btn btn-info 1">view</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/men-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text"><%= userDetails[2].name%><br><%= userDetails[2].credit%></p>
+              <a href="/view3" class="btn btn-info 2">view</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100">
+            <img src="images/men-image.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <p class="card-text"><%= userDetails[3].name%><br><%= userDetails[3].credit%></p>
+              <a href="/view4" class="btn btn-info 3">view</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[4].name%><br><%= userDetails[4].credit%></p>
+                <a href="/view5" class="btn btn-info 4">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[5].name%><br><%= userDetails[5].credit%></p>
+                <a href="/view6" class="btn btn-info 5">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[6].name%><br><%= userDetails[6].credit%></p>
+                <a href="/view7" class="btn btn-info 6">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[7].name%><br><%= userDetails[7].credit%></p>
+                <a href="/view8" class="btn btn-info 7">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[8].name%><br><%= userDetails[8].credit%></p>
+                <a href="/view9" class="btn btn-info 8">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[9].name%><br><%= userDetails[9].credit%></p>
+                <a href="/view10" class="btn btn-info 9">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[10].name%><br><%= userDetails[10].credit%></p>
+                <a href="/view11" class="btn btn-info 10">view</a>
+
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card h-100">
+              <img src="images/men-image.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <p class="card-text"><%= userDetails[11].name%><br><%= userDetails[11].credit%></p>
+                <a href="/view12" class="btn btn-info 11">view</a>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </section> 
+</section>
+    
+    <footer id="footer">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p>© Copyright 2020 GRIP</p>
+    
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</body>
+</html>

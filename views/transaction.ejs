@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/aa794a4ac6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section id="title">
+        <div class="container-fluid">
+    
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">GRIP <img class="Logo" src="/images/grip.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">DashBoard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/user">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/transaction">Transactions</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        </div>
+    </section>    
+
+    <section id="transaction_table">
+      <div class="table-responsive-md">
+      <table class="table table-bordered table-hover table-striped" style="border-radius: 5px;">
+          <tr>
+              <th>Transaction_id</th>
+              <th>Sender_name</th>
+              <th>Receiver_name</th>
+              <th>Credits_transferred</th>
+          </tr>
+          <% for(let transaction of foundTransaction){ %>
+            <tr>
+              
+              <td> <%= transaction._id %> </td>
+              <td> <%= transaction.sender %> </td>
+              <td> <%= transaction.receiver %> </td>
+              <td> <%= transaction.credits_Transfered %> </td>
+
+            </tr>
+          <% } %>
+
+      </table>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <i class="social-icon fab fa-facebook-f"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <p>© Copyright 2020 GRIP</p>
+
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+
+</body>
+</html>
